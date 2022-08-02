@@ -1,0 +1,545 @@
+body {
+  background-color: var(--blue-color);
+}
+
+header {
+  padding-inline: 5%;
+}
+
+.ticket-wallpaper {
+  height: auto;
+
+  background-image: url(../images/ticker-wallpaper.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ticket-header {
+  margin-top: 100px;
+
+  width: 50%;
+}
+
+.ticket-header p {
+  color: var(--yellow--color);
+  font-family: "Open Sans Light";
+  font-size: 2rem;
+
+  margin-bottom: 20px;
+}
+.ticket-header h1 {
+  color: var(--white-color);
+  font-size: 5rem;
+  font-family: "Open Sans ExtraBold";
+
+  line-height: 1;
+}
+
+.ticket-paragraph {
+  margin: 100px 0 50px 0;
+
+  color: var(--white-color);
+  font-family: "Open Sans Regular";
+  font-size: 1.25rem;
+}
+
+.remark {
+  padding-top: 2rem;
+}
+
+.remark h4 {
+  color: var(--yellow--color);
+  font-family: "Open Sans Bold";
+  font-size: 1.25rem;
+}
+
+.remark p {
+  color: var(--white-color);
+  font-family: "Open Sans Regular";
+  font-size: 1.25rem;
+}
+
+.ticket-phases {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+
+  margin-top: 100px;
+}
+
+.phase {
+  width: 100%;
+
+  background-color: var(--white-color);
+
+  border: 1px solid var(--white-color);
+
+  padding: 1rem 2.5rem;
+
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(35%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.white-phase > :nth-child(1) {
+  background-color: var(--white-color);
+}
+
+.phase span {
+  font-family: "Open Sans Medium";
+  font-size: 1.625rem;
+
+  margin: 0 auto;
+}
+
+.phase-date {
+  text-align: center;
+  padding-top: 0.3rem;
+
+  color: var(--white-color);
+  font-family: "Open Sans Medium";
+  font-size: 1.375rem;
+}
+
+.ticket-prices-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.ticket-prices {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-top: 100px;
+}
+
+.ticket-price-board {
+  max-width: 300px;
+  width: 100%;
+  height: 415px;
+
+  background-color: white;
+
+  position: relative;
+}
+
+.ticket-prices > :nth-child(1) {
+  background: linear-gradient(to bottom right, #506bc4 20%, #354781 100%);
+}
+
+.ticket-prices > :nth-child(2) {
+  background: linear-gradient(to bottom right, #a71b45 20%, #641029 100%);
+}
+
+.ticket-prices > :nth-child(3) {
+  background: linear-gradient(to bottom right, #06d6a0 20%, #036b50 100%);
+}
+
+.ticket-prices > :nth-child(4) {
+  background: linear-gradient(to bottom right, #c4c6e7 20%, #626374 100%);
+}
+
+.ticket-prices > * {
+  border: 7px solid white;
+  border-radius: 9.5px;
+
+  color: var(--white-color);
+  text-align: center;
+
+  padding: 25px;
+
+  position: relative;
+}
+
+.ticket-prices > * h1 {
+  font-family: "Open Sans Bold";
+  font-size: 1.875rem;
+
+  margin: 10px 0 20px 0;
+}
+
+.ticket-prices > * p {
+  font-family: "Open Sans Regular";
+  font-size: 1rem;
+
+  line-height: 1.5;
+}
+
+.phase-one {
+  position: relative;
+}
+
+.sale-over-wrap {
+  transform: rotate(-5deg);
+}
+
+.sale-over {
+  padding: 10px;
+
+  background-color: #a71b45;
+  border-radius: 10px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
+}
+
+.sale-over-border {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.sale-over-border span {
+  padding: 50px;
+
+  color: white;
+  font-family: "Open Sans Condensed";
+  font-size: 1.5rem;
+}
+
+.wavy-shape {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.wavy-shape svg {
+  width: 290px;
+}
+
+.wavy-shape span {
+  font-family: "Open Sans ExtraBold";
+  font-size: 3.125rem;
+  color: var(--black-color);
+
+  position: absolute;
+
+  bottom: 20%;
+  left: 20%;
+}
+
+.prices-section {
+  margin-bottom: 150px;
+}
+
+.img-fluid-two {
+  max-width: 70%;
+  height: auto;
+}
+.row > * {
+  flex-basis: 50%;
+}
+
+.electronic-card-container {
+  text-align: center;
+}
+
+.electronic-text-container h1 {
+  color: var(--black-color);
+  font-family: "Open Sans Bold";
+  font-size: 5rem;
+
+  line-height: 1.1;
+}
+
+.electronic-text-container p {
+  color: var(--black-color);
+  font-family: "Open Sans Regular";
+  font-size: 1.25rem;
+
+  margin-block: 50px;
+}
+
+.padding-top {
+  padding-top: 80px;
+}
+
+.curly-background {
+  margin-bottom: 100px;
+}
+.buy-tickets-button-two {
+  padding: 15px 70px;
+
+  background-color: var(--yellow--color);
+  border: 1px solid var(--black-color);
+
+  color: var(--black-color);
+  font-family: "Open Sans Medium";
+  font-size: 1.625rem;
+
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+
+.sales-section {
+  margin-top: 100px;
+}
+
+.sales-text h1 {
+  color: var(--white-color);
+  font-family: "Open Sans ExtraBold";
+  font-size: 5rem;
+}
+
+.sales-text p {
+  color: var(--white-color);
+  font-family: "Open Sans Regular";
+  font-size: 1.25rem;
+
+  margin-block: 50px;
+}
+
+.ticket-sale-location h2 {
+  color: var(--white-color);
+  font-family: "Open Sans Bold";
+  font-size: 1.875rem;
+
+  margin: 3rem 0 1rem 0;
+}
+
+.ticket-place {
+  width: 270px;
+  max-width: 100%;
+
+  margin-top: 2rem;
+
+  border-radius: 9px;
+
+  background-color: var(--white-color);
+}
+
+.ticket-place-wrapper {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.ticket-place-header {
+  border-radius: 9px 9px 0 0;
+
+  padding: 20px 30px;
+}
+
+.ticket-place-header h2 {
+  font-family: "Open Sans ExtraBold";
+  text-align: center;
+
+  color: var(--black-color);
+}
+
+.ticket-place-body {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 30px;
+
+  gap: 20px;
+
+  color: var(--black-color);
+}
+
+.ticket-info h4 {
+  font-family: "Open Sans Bold";
+  font-size: 1.25rem;
+
+  margin-bottom: 2%;
+}
+
+.ticket-info {
+  font-family: "Open Sans Regular";
+  font-size: 1rem;
+}
+
+.section-padding {
+  padding-bottom: 10rem;
+}
+
+.company-tickets h1 {
+  color: var(--white-color);
+  font-family: "Open Sans ExtraBold";
+  font-size: 5rem;
+}
+
+.company-tickets p {
+  color: var(--white-color);
+  font-family: "Open Sans Regular";
+  font-size: 1.25rem;
+}
+
+.company-tickets > p {
+  padding-top: 3rem;
+}
+
+@media (max-width: 1700px) {
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .ticket-prices-container {
+    width: calc(100% - 100px);
+    margin: auto;
+  }
+
+  .ticket-header h1,
+  .sales-text h1,
+  .electronic-text-container h1 {
+    font-size: 3rem;
+  }
+
+  .ticket-prices {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .ticket-place-wrapper {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .buy-tickets-button-two {
+    padding: 10px 50px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .ticket-header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .row > * {
+    flex-basis: 100%;
+  }
+
+  /* .img-fluid-two {
+    max-width: 50%;
+  } */
+}
+
+@media (max-width: 768px) {
+  .ticket-place-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .ticket-header h1,
+  .sales-text h1,
+  .company-tickets h1 {
+    font-size: 2.5rem;
+
+    line-height: 1.3;
+  }
+
+  .company-tickets p,
+  .sales-text p {
+    font-size: 1rem;
+  }
+
+  .sales-text p {
+    margin-block: 30px;
+  }
+
+  .ticket-phases {
+    margin-top: 20px;
+  }
+
+  .phase {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .electronic-text-container p {
+    max-width: 100%;
+  }
+
+  .ticket-prices {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-top: 3rem;
+  }
+
+  .ticket-paragraph {
+    margin: 50px 0 25px 0;
+
+    font-size: 1rem;
+  }
+
+  .remark {
+    padding: 0 20px;
+    margin: 40px 0;
+  }
+
+  .remark p {
+    font-size: 1rem;
+  }
+
+  .electronic-text-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-padding {
+    padding-bottom: 100px;
+  }
+  .buy-tickets-button-two {
+    padding: 10px 30px;
+    font-size: 1rem;
+  }
+
+  .sale-over {
+    padding: 5px;
+  }
+
+  .sale-over-border span {
+    padding: 30px;
+  }
+}
+
+
+
+@media (max-width: 579px) {
+    
+    .ticket-place {
+        width: 230px;
+        margin-top: 1rem;
+    }
+    
+     
+   .ticket-place-header,
+   .ticket-place-body {
+       padding: 10px 20px;
+   }
+   
+   .ticket-info h4 {
+       font-size: 1.125rem;
+   }
+   
+   .ticket-info {
+       font-size: 0.875rem;
+   }
+    
+}
+
+@media (max-width: 400px) {
+  .wavy-shape {
+    left: -1px;
+  }
+}

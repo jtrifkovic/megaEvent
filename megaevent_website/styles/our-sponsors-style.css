@@ -1,0 +1,45 @@
+.buy-tickets-button {
+  border: 1px solid var(--white-color);
+
+  padding: 10px 25px;
+}
+
+.buy-tickets-button::after {
+  border: 1px solid var(--white-color);
+}
+
+.button-margin {
+  margin-top: 50px;
+}
+
+.general-sponsor h1,
+.other-sponsors h1 {
+  text-align: left;
+
+  color: var(--yellow--color);
+  font-family: "Open Sans Bold";
+  font-size: 2rem;
+
+  margin-bottom: 20px;
+}
+
+.gray-rectangle {
+  margin: 0 0 100px 0;
+}
+
+.sponsors-rectangle {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 2fr));
+  gap: 10px;
+}
+
+.rectangle {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .sponsors-rectangle {
+    grid-template-columns: repeat(2, minmax(0, 2fr));
+  }
+}

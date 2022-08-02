@@ -1,0 +1,50 @@
+.transport-card {
+  width: 270px;
+  max-width: 100%;
+  height: auto;
+
+  background-color: var(--yellow--color);
+
+  text-align: center;
+
+  border-radius: 10px;
+
+  padding: 15px;
+}
+
+.transport-card span {
+  color: var(--black-color);
+  font-family: "Open Sans ExtraBold";
+  font-size: 1.875rem;
+}
+
+.transport-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.transport-container > * {
+  margin-bottom: 20px;
+}
+
+.travel-image-wrap {
+  text-align: center;
+
+  padding-bottom: 6rem;
+}
+
+.travel-image-wrap > img {
+  max-width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .travel-image-wrap {
+    padding-bottom: 3rem;
+  }
+  .travel-image-wrap > img {
+    max-width: 70%;
+  }
+}

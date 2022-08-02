@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:title"
+      content="Megaevent.ba - Koncert Zdravka Čolića u Bijeljini"
+    />
+    <meta
+      property="og:image"
+      content="https://megaevent.ba/images/concert-photo-one.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Sa ogromnom energijom koja ga pokreće decenijama unazad Zdravko će
+    izaći pred publiku u 21h i otpjevaće najveće hitove uz koje su
+    odrastale mnoge generacije."
+    />
+    <link rel="stylesheet" href="styles/style.css?v=201" />
+    <link rel="icon" href="./images/favicon.png" />
+    <title>MegaEvent.ba</title>
+  </head>
+  <body>
+    <div class="background-wallpaper">
+      <div class="banner-container">
+        <header>
+          <nav class="navbar">
+            <div class="logo">
+              <a href="/">
+                <img src="./images/logo.svg" alt="megaevent bijeljina" />
+              </a>
+            </div>
+            <div class="card-hamburger">
+              <!-- <div class="ticket-wrapper ticket-item">
+                <a
+                  href="https://www.kupikartu.ba/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="nav-link ticket-link"
+                >
+                  <img
+                    src="./images/ticket.svg"
+                    alt="megaevent bijeljina karte"
+                    class="ticket-image"
+                  />
+                  <span>KARTE</span>
+                </a>
+              </div> -->
+              <div class="hamburger-wrapper">
+                <div class="animated-icon">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <ul class="navbar-nav">
+                <img
+                  src="./images/menu-mark.svg"
+                  alt="megaevent website"
+                  class="svg-fluid"
+                />
+                <li class="nav-item">
+                  <a href="./about-concert.html" class="nav-link">O koncertu</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./location.html" class="nav-link">Lokacija</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./zones.html" class="nav-link">Koncertne zone</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./ticket-sale.html" class="nav-link"
+                    >Prodaja karata</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./transport.html" class="nav-link"
+                    >Organizovani prevoz</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./accommodation.html" class="nav-link">Smještaj</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a href="./our-sponsors.html" class="nav-link">Sponzori</a>
+                </li> -->
+                <li class="nav-item">
+                  <a href="./sponsor-gifts.html" class="nav-link"
+                    >Nagradna igra</a
+                  >
+                </li>
+                <li>
+                  <div class="border-bottom"></div>
+                </li>
+                <li class="social-media-li">
+                  <div class="social-media">
+                    <a
+                      href="https://www.instagram.com/accounts/login/?next=/megaevent.ba/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <img src="./images/yellow-instagram.svg" alt=""
+                    /></a>
+                    <a
+                      href="https://m.facebook.com/megaevent.bn"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <img src="./images/yellow-facebook.svg" alt=""
+                    /></a>
+                    <a
+                      href="https://www.youtube.com/channel/UCjGgyr5MZdgPLWBvOvivtaA"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <img src="./images/yellow-youtube.svg" alt=""
+                    /></a>
+                  </div>
+                  <!-- <div class="menu-text">
+                    <a href="/">Postani dio tima</a>
+                  </div> -->
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+        <div class="banner-text-container">
+          <div class="banner-container-wrap">
+            <div class="text-container">
+              <h1>
+                KONCERT <br />
+                ZDRAVKA ČOLIĆA
+              </h1>
+            </div>
+
+            <div class="concert-announce">
+              <h3>
+                SUBOTA 6. AVGUST
+                <br />
+                BIJELJINA - GRADSKI STADION
+              </h3>
+            </div>
+
+            <div class="timer">
+              <div class="timer-card">
+                <div class="timer-counter" id="days"></div>
+                <div class="timer-text"><p>Dana</p></div>
+              </div>
+              <div class="timer-card">
+                <div class="timer-counter" id="hours"></div>
+                <div class="timer-text"><p>Sati</p></div>
+              </div>
+              <div class="timer-card">
+                <div class="timer-counter" id="minutes"></div>
+                <div class="timer-text"><p>Minuta</p></div>
+              </div>
+              <div class="timer-card">
+                <div class="timer-counter" id="seconds"></div>
+                <div class="timer-text"><p>Sekundi</p></div>
+              </div>
+            </div>
+
+            <div class="button-container display-none">
+              <a
+                href="https://www.kupikartu.ba/karte/event/5399/zdravko-oli"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <button class="buy-tickets-button">KUPI KARTE</button></a
+              >
+            </div>
+          </div>
+          <div class="social-media-group">
+            <a
+              href="https://www.instagram.com/accounts/login/?next=/megaevent.ba/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                src="./images/instagram.svg"
+                alt="megaevent bijeljina instagram"
+              />
+            </a>
+
+            <a
+              href="https://m.facebook.com/megaevent.bn"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                src="./images/facebook.svg"
+                alt="megaevent bijeljina facebook"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCjGgyr5MZdgPLWBvOvivtaA"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                src="./images/youtube.svg"
+                alt="megaevent bijeljina youtube"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="page-break"></div>
+    </div>
+
+    <section class="bg-dark">
+      <div class="container">
+        <div class="content-container">
+          <div class="row">
+            <div class="placeholder-container">
+              <p class="subtitle">KONCERT</p>
+              <h1>ZDRAVKO ČOLIĆ U BIJELJINI</h1>
+              <p class="paragraph">
+                Organizatori D.O.O. Mega Event Ba i D.O.O. Melos Estrada Vas
+                pozivaju na spektakularni koncert najveće EX-Yu zvijezde Zdravka
+                Čolića na gradskom stadionu 6. avgusta 2022.
+
+                <br />
+                <br />
+
+                Ulaznice za koncert biće u prodaji od utorka 26. aprila na svim
+                našim uličnim prodajnim mjestima, a kupovina je moguća i online.
+                Broj mjesta je ograničen.
+
+                <br />
+                <br />
+                Koncert je pod pokroviteljstvom grada Bijeljina.
+              </p>
+            </div>
+            <div class="images-container display-none">
+              <img
+                src="./images/concert-photo-one.jpg"
+                alt=""
+                class="concert-img-fluid rotate-right"
+              />
+              <img
+                src="./images/concert-photo-two.png"
+                alt=""
+                class="concert-img-fluid rotate-left"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <a
+            href="https://www.google.com/maps/place/Radnik/@44.7549709,19.2242239,17.75z/data=!4m5!3m4!1s0x475be8fc5c43d3f3:0xf2b322b5ede04aa8!8m2!3d44.7542383!4d19.2245159"
+            target="_blank"
+            rel="noopenner"
+          >
+            <img src="./images/bijeljina-map.png" alt="" class="map-fluid" />
+          </a>
+
+          <div class="map-indicator-wrap">
+            <div class="map-indicator">
+              <img src="./images/half-circle.svg" alt="" class="circle" />
+              <img src="./images/finger.svg" alt="" class="finger" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="texture-background">
+      <div class="container">
+        <div class="row">
+          <div class="placeholder-container">
+            <p class="mini-title">PRODAJA KARATA</p>
+            <h1>KAKO DOĆI DO KARTE</h1>
+            <p>
+              Do Vaše karte fizički možete doći na nekom od prodajnih mjesta ili
+              svoju kartu možete kupiti online na sajtu www.kupikartu.ba.
+              Prodaja VIP karata će se vršiti isključivo preko telefona.
+            </p>
+
+            <!-- <div class="button-cont">
+              <a
+                href="https://www.kupikartu.ba/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <button class="buy-tickets-button">KUPI KARTE</button></a
+              >
+            </div> -->
+          </div>
+
+          <div class="card-container">
+            <a
+              href="https://www.kupikartu.ba/karte/event/5399/zdravko-oli"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <div class="card-one">
+                <div class="card-flex">
+                  <div class="card-image position-relative">
+                    <img src="./images/phone.svg" alt="" class="hover" />
+                    <img
+                      src="./images/@.svg"
+                      alt=""
+                      class="position-absolute"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <h1>ELEKTRONSKA</h1>
+                    <p>
+                      Za sve one koji su tradicionalan način kupovine zamjenili
+                      novim elektronskim obezbjedili smo sigurnu online
+                      kupovinu.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./ticket-sale.html#sale-place">
+              <div class="card-two">
+                <div class="card-flex">
+                  <div class="card-image position-relative">
+                    <img
+                      src="./images/ticket-two.svg"
+                      alt=""
+                      class="position-absolute-two hover"
+                    />
+                    <img src="./images/ticket-one.svg" alt="" class="mt-5" />
+                  </div>
+                  <div class="card-text">
+                    <h1>ULIČNA</h1>
+                    <p>
+                      Ovde možete vidjeti kompletan spisak naših ovlaštenih
+                      prodajnih mjesta u Bijeljini i okolnim mjestima.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./ticket-sale.html#firm-ticket">
+              <div class="card-three">
+                <div class="card-flex">
+                  <div class="card-image">
+                    <img src="./images/firme.svg" alt="" />
+                  </div>
+                  <div class="card-text">
+                    <h1>KARTE ZA FIRME</h1>
+                    <p>
+                      Obradujte svoje zaposlene kartama za koncert decenije.
+                      Dostupne ulaznice za zone Fan Pit i Parter.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="curly-background">
+      <div class="container-two">
+        <div class="padding-top">
+          <div class="row space-manage-row">
+            <div class="space-manage">
+              <img
+                src="./images/content-space.png"
+                alt=""
+                class="img-fluid-two"
+              />
+            </div>
+
+            <div class="space-manage-text">
+              <p>ZONE</p>
+              <h1>
+                PRONAĐI <br />
+                SVOJU ZONU
+              </h1>
+              <p>
+                Mjesto koncerta podijeljeno je i fizički (ogradama i barijerama)
+                i cijenom karata u odnosu na zone! Glavni ulaz biće iz Galca, a
+                pomoćni kod streljane!
+              </p>
+              <div class="square-container">
+                <div class="first-container">
+                  <a href="./zones.html#zone-info">
+                    <div class="square-wrap">
+                      <div class="square turquoise"></div>
+                      <span>VIP</span>
+                    </div>
+                  </a>
+                  <a href="./zones.html#zone-info">
+                    <div class="square-wrap">
+                      <div class="square red"></div>
+                      <span>Fanpit</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="second-container">
+                  <a href="./zones.html#zone-info">
+                    <div class="square-wrap">
+                      <div class="square aqua"></div>
+                      <span>VIP Tribina</span>
+                    </div>
+                  </a>
+                  <a href="./zones.html#zone-info">
+                    <div class="square-wrap">
+                      <div class="square blue"></div>
+                      <span>Parter</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark">
+      <div class="container">
+        <div class="general-sponsor">
+          <p>SPONZORI</p>
+          <h1>POKROVITELJ</h1>
+          <div class="gen-sponsor-image">
+            <img
+              src="./images/grad-logo.svg"
+              alt="grad bijeljina megaevent"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <div class="other-sponsors">
+          <h2>ORGANIZATORI</h2>
+          <div class="organizers">
+            <img
+              src="./images/melos-estrada.png"
+              alt="megaevent melos-estrada"
+              class="melos-img"
+            />
+            <img src="./images/mega-event-bijeljina.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="other-sponsors">
+          <h2>PRIJATELJI KONCERTA</h2>
+          <div class="concert-friends">
+            <img src="./images/trimix.svg" alt="megaevent trimix" />
+            <img src="./images/happy-travel.png" alt="megaevent happy travel" />
+            <img
+              src="./images/kingdom.svg"
+              alt="megaevent kingdom doo bijeljina"
+            />
+            <img
+              src="./images/projekat.png"
+              alt="megaevent projekat enterijeri"
+            />
+            <img
+              src="./images/standard.png"
+              alt="megaevent standard racunovodstvo"
+            />
+            <img
+              src="./images/etno-selo.svg"
+              alt="megaevent etno selo stanisici"
+            />
+            <img src="./images/drina-tara.svg" alt="megaevent drina tara" />
+            <img
+              src="./images/motel-milosevic.svg"
+              alt="megaevent motel milosevic"
+            />
+            <img src="./images/atlas.png" alt="megaevent atlas hoteli" />
+            <img src="./images/patroltaxi.svg" alt="megaevent patrol taxi" />
+            <img src="./images/rottal.png" alt="megaevent rottal" />
+            <img src="./images/krule.png" alt="megaevent krule" />
+            <img src="./images/allegro.svg" alt="megaevent allegro" />
+            <img src="./images/ritual.png" alt="megaevent ritual" />
+            <img src="./images/sollo.svg" alt="megaevent sollo" />
+            <img src="./images/maxledmedia.png" alt="megaevent max led media" />
+            <img src="./images/park.png" alt="megaevent park srebrenik" />
+            <img src="./images/balkan-pub.svg" alt="megaevent balkan pub" />
+            <img src="./images/spark-logo.svg" alt="megaevent spark logo" />
+            <img src="./images/house-bar.png" alt="megaevent house bar" />
+            <img src="./images/praha.svg" alt="megaevent praha bijeljina" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="page-break-footer"></div>
+      <div class="container-fluid">
+        <div class="about-concert">
+          <ul class="concert-list">
+            <li><a href="./ticket-sale.html">PRODAJA KARATA</a></li>
+            <li><a href="./about-concert.html">O KONCERTU</a></li>
+            <li><a href="./location.html">LOKACIJA</a></li>
+            <li><a href="./zones.html">ZONE</a></li>
+            <li><a href="./transport.html">PREVOZ</a></li>
+            <!-- <li><a href="./our-sponsors.html">SPONZORI</a></li> -->
+            <li><a href="./sponsor-gifts.html">NAGRADNE IGRE</a></li>
+            <!-- <li><a href="/">POSTANI DIO TIMA</a></li> -->
+          </ul>
+        </div>
+
+        <div class="concert-media">
+          <div class="logo">
+            <img src="./images/mega-event-footer-logo.svg" alt="" />
+          </div>
+
+          <div class="social-media-group-footer">
+            <a
+              href="https://www.instagram.com/accounts/login/?next=/megaevent.ba/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                src="./images/yellow-instagram.svg"
+                alt="megavent bijeljina instagram"
+            /></a>
+            <a
+              href="https://m.facebook.com/megaevent.bn"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                src="./images/yellow-facebook.svg"
+                alt="megaevent bijeljina facebook"
+            /></a>
+            <a
+              href="https://www.youtube.com/channel/UCjGgyr5MZdgPLWBvOvivtaA"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img
+                src="./images/yellow-youtube.svg"
+                alt="megavent bijeljina youtube"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="yellow-footer">
+        <div class="container-fluid">
+          <div class="copy-right-container">
+            <span>Copyright megaevent.ba 2022</span>
+            <a
+              href="http://kingdomdoo.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <span>Designed by KINGDOM</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/timer.js"></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcJ7WbfbdTwhLCb1oBXbiq2VDRBZU_h2M&callback=initMap&v=weekly"
+      async
+      defer
+    ></script>
+  </body>
+</html>

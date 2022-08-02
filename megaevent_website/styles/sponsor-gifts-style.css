@@ -1,0 +1,137 @@
+.input-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.input-container > * {
+  margin-bottom: 20px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container input[type="tel"] {
+  padding: 10px;
+  width: 95%;
+
+  font-family: "Open Sans Medium";
+  font-size: 1.25rem;
+}
+
+.input-container label {
+  color: var(--white-color);
+  font-family: "Open Sans Regular";
+  font-size: 1.25rem;
+}
+
+/* .newsletter {
+  margin-top: 45px;
+
+  display: flex;
+  align-items: center;
+}
+
+.newsletter label {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+
+  padding-left: 50px;
+
+  display: inline-block;
+
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 1.3em;
+  height: 1.3em;
+
+  outline: 2px solid var(--yellow--color);
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 1.3em;
+  height: 1.3em;
+  background-color: var(--yellow--color);
+
+  outline: 2px solid var(--yellow--color);
+}
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 1.2em;
+  height: 1.2em;
+
+  background-image: url(../images/checkmark.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 1px;
+  outline: 2px solid var(--yellow--color);
+
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.2s ease-out;
+}
+
+input[type="checkbox"]:not(:checked) + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 1.2em;
+  height: 1.2em;
+
+  background-image: url(../images/checkmark.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0.5px;
+  outline: 2px solid var(--yellow--color);
+
+  transform: scale(0);
+
+  opacity: 0;
+} */
+
+.button {
+  width: 50%;
+
+  margin-top: 50px;
+}
+
+.card-gifts > * {
+  margin-top: 0.5rem;
+}
+
+.yellow-bold {
+  color: var(--yellow--color);
+  font-weight: bolder;
+}
+
+@media (max-width: 992px) {
+  .newsletter {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .input-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

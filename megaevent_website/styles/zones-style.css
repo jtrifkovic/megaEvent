@@ -1,0 +1,94 @@
+.concert-zone-wrapper {
+  flex-basis: 60%;
+}
+
+.concert-zones {
+  flex-basis: 40%;
+}
+
+.square-wrap span {
+  color: var(--white-color);
+}
+
+.curly-background {
+  margin-top: 100px;
+
+  height: 100%;
+
+  margin-bottom: 50px;
+}
+
+.ticket-place-header h2 {
+  text-align: left;
+}
+
+.zone-info-text {
+  font-family: "Open Sans ExtraBold";
+  font-size: 2rem;
+
+  padding: 6rem 0 0;
+}
+
+.zone-place {
+  max-width: 380px;
+  width: 100%;
+
+  height: auto;
+}
+
+.zone-information {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  padding-bottom: 3rem;
+}
+
+.remark-wrap {
+  margin-bottom: 150px;
+}
+
+.remark p {
+  color: var(--white-color);
+  font-family: "Open Sans Regular";
+  font-size: 1.25rem;
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .zone-information {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .concert-zone-wrapper,
+  .concert-zones {
+    flex-basis: 100%;
+
+    text-align: center;
+  }
+
+  .square-container {
+    justify-content: center;
+
+    margin-top: 50px;
+  }
+
+  .curly-background {
+    height: 100%;
+  }
+
+  .zone-information {
+    justify-content: center;
+  }
+
+  .zone-information > :last-child {
+    margin-bottom: 80px;
+  }
+
+  .remark-wrap {
+    margin-bottom: 100px;
+  }
+}

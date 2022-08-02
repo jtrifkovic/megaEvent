@@ -1,0 +1,1230 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #111111;
+  --gray-color: #dedede;
+  --dark-gray-color: #cccccc;
+  --yellow--color: #f9c924;
+  --blue-color: #161523;
+}
+
+.page-break {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+
+  width: auto;
+  height: 30px;
+
+  background-image: url(../images/page-break.png);
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: var(--blue-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url(../fonts/OpenSans_Condensed-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url(../fonts/OpenSans_Condensed-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans Medium";
+  src: url(../fonts/OpenSans_Condensed-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url(../fonts/OpenSans_Condensed-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Open Sans ExtraBold";
+  src: url(../fonts/OpenSans_Condensed-ExtraBold.ttf);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.background-wallpaper {
+  position: relative;
+  min-height: 110vh;
+
+  padding-bottom: 5rem;
+
+  background-image: url(../images/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: 0;
+}
+.banner-container {
+  padding-inline: 5%;
+}
+header {
+  padding-top: 2%;
+
+  width: 100%;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-hamburger {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 700px;
+  background-color: var(--blue-color);
+
+  position: fixed;
+  gap: 20px;
+
+  list-style: none;
+  top: 0;
+  right: -700px;
+  z-index: 1;
+
+  padding: 100px 50px;
+
+  transition: all 0.7s ease-in-out;
+}
+.change {
+  right: 0;
+
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.7);
+}
+.nav-item .nav-link {
+  font-family: "Open Sans Light";
+  font-size: 2rem;
+  color: var(--white-color);
+}
+
+.svg-fluid {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.social-media-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-media img {
+  margin: 10px;
+}
+
+.menu-text {
+  font-family: "Open Sans Light";
+  font-size: 1.875rem;
+  color: var(--white-color);
+
+  z-index: 2;
+}
+.border-bottom {
+  border: 1px solid var(--gray-color);
+
+  margin-top: 50px;
+}
+
+.animated-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+
+  z-index: 3;
+}
+
+.animated-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.animated-icon span {
+  background: var(--white-color);
+}
+
+.animated-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon span:nth-child(2),
+.animated-icon span:nth-child(3) {
+  top: 10px;
+}
+
+.animated-icon span:nth-child(4) {
+  top: 20px;
+}
+
+.animated-icon.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.animated-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.animated-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.animated-icon.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.banner-text-container {
+  margin-inline: auto;
+}
+
+.banner-container-wrap {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+
+  gap: 10px;
+
+  margin-top: 10rem;
+}
+
+.banner-container-wrap > :last-child {
+  padding-top: 2rem;
+}
+
+.fixed {
+  position: fixed;
+
+  right: 5%;
+  top: 6%;
+}
+
+.ticket-link {
+  position: relative;
+}
+.ticket-wrapper span {
+  position: absolute;
+  left: 35%;
+  bottom: 90%;
+
+  color: var(--black-color);
+  font-family: "Open Sans Medium";
+  font-size: 1.25rem;
+}
+.text-container {
+  /* position: absolute; */
+  bottom: 30%;
+
+  max-width: 50%;
+}
+.text-container h1 {
+  color: var(--white-color);
+  font-family: "Open Sans Bold";
+  font-size: 5.5rem;
+  line-height: 1.1;
+}
+.button-container {
+  /* position: absolute; */
+  bottom: 20%;
+}
+
+.concert-announce {
+  color: var(--yellow--color);
+  font-family: "Open Sans Condensed";
+  font-size: 2.25rem;
+}
+.buy-tickets-button {
+  position: relative;
+
+  padding: 15px 70px;
+
+  background-color: var(--yellow--color);
+  border: 1px solid var(--white-color);
+
+  color: var(--black-color);
+  font-family: "Open Sans Medium";
+  font-size: 1.625rem;
+
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+.buy-tickets-button::after {
+  content: "";
+  position: absolute;
+  left: 0.8rem;
+  top: 0.8rem;
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+  border: 1px solid var(--white-color);
+
+  transform: translate(0, 0);
+  transition: all 0.4s ease-out;
+
+  z-index: -1;
+}
+
+.timer {
+  color: var(--black-color);
+  font-family: "Open Sans ExtraBold";
+  font-size: 2.5rem;
+
+  display: flex;
+  gap: 10px;
+}
+
+.timer-card {
+  max-width: 100px;
+  width: 100%;
+
+  border-radius: 10px;
+
+  background-color: var(--white-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-counter {
+  padding: 0.3rem;
+}
+
+.timer-text {
+  background-color: var(--yellow--color);
+  width: 100%;
+
+  text-align: center;
+
+  padding: 0.3rem;
+
+  border-radius: 0 0 10px 10px;
+
+  font-family: "Open Sans Condensed";
+  font-size: 1.125rem;
+}
+
+.social-media-group {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.bg-dark {
+  padding-bottom: 150px;
+}
+.container {
+  width: calc(100% - 300px);
+  max-width: 1200px;
+  margin: auto;
+}
+.container-two {
+  width: calc(100% - 100px);
+  max-width: 1300px;
+  margin: auto;
+}
+.content-container {
+  padding-top: 100px;
+}
+
+.padding-top {
+  padding-top: 80px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.placeholder-container {
+  padding-top: 5rem;
+  flex-basis: 40%;
+}
+.placeholder-container > *,
+.space-manage-text > * {
+  margin-bottom: 30px;
+}
+.placeholder-container > p:nth-of-type(1),
+.space-manage-text > p:nth-of-type(1) {
+  color: var(--yellow--color);
+  font-family: "Open Sans Light";
+  font-size: 2rem;
+}
+
+.space-manage-text > p:nth-of-type(1) {
+  color: var(--black-color);
+}
+.placeholder-container > p:nth-of-type(2),
+.space-manage-text > p:nth-of-type(2) {
+  margin-top: 50px;
+
+  color: var(--white-color);
+  font-family: "Open Sans Regular";
+  font-size: 1.25rem;
+}
+
+.space-manage-text > p:nth-of-type(2) {
+  color: var(--black-color);
+}
+.placeholder-container h1,
+.space-manage-text > h1 {
+  font-family: "Open Sans Bold";
+  font-size: 5rem;
+  color: var(--white-color);
+  line-height: 0.85;
+}
+
+.space-manage-text > h1 {
+  color: var(--black-color);
+}
+.images-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  flex-basis: 60%;
+
+  margin-right: -150px;
+
+  z-index: -1;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-fluid-two {
+  max-width: 70%;
+  height: auto;
+}
+.concert-img-fluid {
+  max-width: 45%;
+  height: auto;
+
+  border: 5px solid var(--white-color);
+}
+.rotate-right {
+  transform: rotate(6deg);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.rotate-left {
+  transform: rotate(-4deg);
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+.map-container {
+  text-align: center;
+  margin-top: 200px;
+
+  position: relative;
+}
+
+.map-indicator-wrap {
+  position: absolute;
+  bottom: -50px;
+  right: 100px;
+  /* right: -10px; */
+}
+
+.map-indicator {
+  position: relative;
+}
+
+.finger {
+  position: absolute;
+  top: 35%;
+  /* right: 20%; */
+  left: 35%;
+  animation: fingerAnimation 2.5s linear infinite normal;
+  transition: all 0.3s ease-out;
+}
+
+@keyframes fingerAnimation {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+.map-fluid {
+  max-width: 70%;
+}
+.texture-background {
+  background-image: url(../images/texture-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  position: relative;
+  z-index: 0;
+
+  margin-bottom: 200px;
+}
+
+.z-index-1 {
+  z-index: -1;
+}
+
+.position-initial {
+  position: initial !important;
+}
+.card-container {
+  flex-basis: 60%;
+}
+.card-one,
+.card-two,
+.card-three {
+  max-width: 430px;
+  width: 100%;
+  height: auto;
+
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 12px 11px 14px 16px rgba(0, 0, 0, 0.16);
+}
+.card-one {
+  position: absolute;
+  top: -5%;
+  right: 10%;
+}
+.card-two {
+  position: absolute;
+  top: 35%;
+  right: 20%;
+}
+
+.card-three {
+  position: absolute;
+  right: 10%;
+  bottom: -5%;
+}
+
+.card-flex {
+  display: flex;
+  padding: 2rem;
+}
+.card-image {
+  flex-basis: 30%;
+  margin: auto;
+}
+.card-text {
+  flex-basis: 70%;
+}
+.card-text h1 {
+  font-family: "Open Sans Bold";
+  font-size: 1.875rem;
+}
+.card-text p {
+  font-family: "Open Sans Regular";
+  font-size: 1rem;
+}
+.curly-background {
+  background-image: url(../images/curly-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.space-manage {
+  flex-basis: 50%;
+}
+
+.space-manage-text {
+  padding-top: 100px;
+
+  flex-basis: 40%;
+}
+
+.space-manage-row {
+  justify-content: initial;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+}
+
+.yellow {
+  background-color: var(--yellow--color) !important;
+
+  transition: all 200ms ease-in-out;
+}
+
+.aqua {
+  background-color: #06d6a0;
+}
+.red {
+  background-color: #d7263d;
+}
+
+.turquoise {
+  background-color: #c4c6e7;
+}
+
+.blue {
+  background-color: #506bc4;
+}
+
+.green {
+  background-color: #6bcf40;
+}
+.square-container {
+  display: flex;
+
+  gap: 30px;
+}
+
+.first-container,
+.second-container {
+  display: flex;
+
+  gap: 20px;
+
+  flex-direction: column;
+}
+
+.second-container {
+  margin-left: 20px;
+}
+
+.square-wrap {
+  display: flex;
+}
+
+.first-container span,
+.second-container span {
+  font-family: "Open Sans Bold";
+  font-size: 1.25rem;
+
+  margin-left: 20px;
+}
+
+.general-sponsor {
+  padding-top: 100px;
+  text-align: center;
+}
+.general-sponsor p {
+  color: var(--yellow--color);
+  font-family: "Open Sans Light";
+  font-size: 2rem;
+}
+
+.general-sponsor h1 {
+  color: var(--white-color);
+  font-size: 5rem;
+  font-family: "Open Sans Bold";
+}
+.gray-rectangle {
+  max-width: 370px;
+  height: 155px;
+  background-color: var(--dark-gray-color);
+  margin: auto;
+  margin-block: 50px;
+}
+
+.other-sponsors {
+  margin-block: 3rem;
+}
+
+.other-sponsors > .organizers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 2rem;
+}
+.other-sponsors h2 {
+  font-family: "Open Sans Bold";
+  text-align: center;
+  color: var(--white-color);
+  font-size: 1.875rem;
+}
+/* .sponsors-rectangle {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 2fr));
+  gap: 10px;
+} */
+
+.concert-friends {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+}
+
+.concert-friends > * {
+  padding: 1rem;
+}
+.rectangle {
+  max-width: 270px;
+  height: 127px;
+  background-color: var(--dark-gray-color);
+}
+
+.melos-img {
+  max-width: 30%;
+  height: auto;
+}
+.container-fluid {
+  width: 95%;
+  margin: auto;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+  left: 10px;
+  top: 20%;
+}
+.position-absolute-two {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.mt-5 {
+  margin-top: 50px;
+}
+footer {
+  background-color: var(--white-color);
+  font-family: "Open Sans Medium";
+
+  padding-top: 100px;
+
+  position: relative;
+}
+
+.page-break-footer {
+  background-image: url(../images/page-break-white.png);
+  height: 30px;
+
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+}
+
+.about-concert {
+  border-bottom: 1px solid var(--black-color);
+  padding-bottom: 30px;
+}
+
+.concert-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.concert-list li a {
+  color: var(--black-color);
+  font-size: 1.25rem;
+}
+.concert-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 80px;
+}
+
+.social-media-group-footer {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.yellow-footer {
+  background-color: var(--yellow--color);
+}
+.copy-right-container {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 20px;
+}
+
+/* Accommodation card */
+
+.accommodation-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.accommodation {
+  background-color: white;
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.accommodation-image {
+  padding: 24px 25px 21px;
+}
+
+.accommodation-name {
+  width: 100%;
+  padding: 20px 0;
+
+  background-color: var(--yellow--color);
+}
+
+.accommodation-name p {
+  color: var(--black-color);
+  font-family: "Open Sans Condensed";
+  font-size: 1.25rem;
+}
+
+.accommodation-text {
+  padding: 24px 30px 30px;
+
+  text-align: left;
+}
+
+.accommodation-text p {
+  color: var(--black-color);
+  font-family: "Open Sans Condensed";
+  font-size: 1.25rem;
+
+  line-height: 1.4;
+}
+
+.accommodation-text_address {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  header,
+  .banner-text-container,
+  .container-fluid {
+    max-width: 1700px;
+  }
+
+  .container,
+  .container-two {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ticket-wrapper:hover {
+    transform: rotate(-4deg);
+    transition: all 0.3s ease-out;
+  }
+  .buy-tickets-button:hover {
+    transform: translate(0.8rem, 0.8rem);
+    background-color: var(--white-color);
+  }
+  .buy-tickets-button:hover::after {
+    transform: translate(-0.8rem, -0.8rem);
+  }
+  .card-one:hover,
+  .card-three:hover {
+    transform: rotate(-4deg);
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+  }
+  .card-two:hover {
+    transform: rotate(6deg);
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+  }
+  .card-one:hover .card-image .hover,
+  .card-two:hover .card-image .hover,
+  .card-three:hover .card-image img {
+    transform: rotate(360deg);
+    transition: all 0.3s ease-out;
+  }
+}
+
+@media (max-width: 1050px) {
+  .card-one,
+  .card-two,
+  .card-three {
+    position: initial;
+    height: auto;
+    margin-bottom: 20px;
+    margin-inline: auto;
+  }
+
+  .curly-background {
+    height: 100%;
+  }
+
+  .texture-background {
+    height: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .container {
+    max-width: calc(100% - 100px);
+    width: 100%;
+  }
+  .text-container h1 {
+    font-size: 3rem;
+  }
+
+  .buy-tickets-button {
+    padding: 10px 50px;
+    font-size: 1rem;
+  }
+
+  .buy-tickets-button::after {
+    left: 0.6rem;
+    top: 0.6rem;
+  }
+
+  .placeholder-container {
+    padding-top: 20px;
+  }
+
+  .placeholder-container > p:nth-of-type(1),
+  .space-manage-text > p:nth-of-type(1) {
+    font-size: 1.5rem;
+  }
+  .placeholder-container > p:nth-of-type(2) {
+    font-size: 1.25rem;
+  }
+  .placeholder-container h1,
+  .space-manage-text > h1 {
+    font-size: 2rem;
+  }
+
+  .images-container {
+    margin-right: -50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .background-wallpaper {
+    height: 100vh;
+
+    background-image: url(../images/background-mobile.png);
+  }
+  .display-none {
+    display: none;
+  }
+  .ticket-item {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+  }
+
+  .concert-announce > h3 {
+    font-size: 1.5rem;
+  }
+
+  .timer {
+    font-size: 2rem;
+  }
+
+  .timer-text {
+    font-size: 1rem;
+  }
+
+  .banner-text-container {
+    position: absolute;
+    bottom: 25%;
+  }
+  .text-container {
+    max-width: 100%;
+  }
+  .text-container h1 {
+    font-size: 2.5rem;
+  }
+  .container,
+  .container-two {
+    width: 100%;
+    padding-inline: 5%;
+  }
+  .social-media-group {
+    display: none;
+  }
+  .placeholder-container,
+  .images-container,
+  .card-container,
+  .space-manage,
+  .space-manage-text {
+    flex-basis: 100%;
+  }
+
+  .space-manage {
+    text-align: center;
+  }
+  .content-container,
+  .placeholder-container {
+    padding-top: 20px;
+  }
+  .placeholder-container > * {
+    margin-bottom: 10px;
+  }
+  .placeholder-container > p:nth-of-type(1),
+  .space-manage-text > p:nth-of-type(1) {
+    font-size: 1.25rem;
+  }
+  .placeholder-container > p:nth-of-type(2) {
+    font-size: 1.125rem;
+  }
+  .placeholder-container h1,
+  .space-manage-text > h1 {
+    font-size: 1.875rem;
+    width: 70%;
+  }
+  .buy-tickets-button {
+    padding: 10px 30px;
+    font-size: 1rem;
+  }
+
+  .buy-tickets-button::after {
+    left: 0.6rem;
+    top: 0.6rem;
+  }
+  .map-container {
+    margin-top: 50px;
+  }
+
+  #map {
+    height: 100%;
+  }
+  .map-fluid {
+    max-width: 100%;
+  }
+  .bg-dark {
+    padding-bottom: 100px;
+  }
+  .card-one,
+  .card-two,
+  .card-three {
+    position: initial;
+    height: auto;
+    margin-bottom: 20px;
+    margin-inline: auto;
+  }
+
+  .card-container {
+    margin-top: 30px;
+  }
+  .card-text h1 {
+    font-size: 1.188rem;
+  }
+  .card-flex {
+    padding: 25px;
+  }
+
+  .card-image {
+    flex-basis: 35%;
+  }
+
+  .card-text {
+    flex-basis: 65%;
+  }
+  .general-sponsor {
+    text-align: left;
+    padding-top: 50px;
+  }
+  .general-sponsor h1,
+  .general-sponsor p {
+    width: 50%;
+  }
+  .general-sponsor p {
+    font-size: 1rem;
+  }
+  .general-sponsor h1 {
+    font-size: 1.875rem;
+  }
+  .gray-rectangle {
+    height: 137px;
+  }
+
+  .about-concert {
+    margin-top: 50px;
+  }
+  .concert-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .concert-list > * {
+    margin-bottom: 10px;
+  }
+  .concert-media {
+    flex-direction: column;
+  }
+
+  .other-sponsors > .organizers {
+    flex-direction: column;
+
+    margin: 0 auto;
+  }
+
+  .concert-media {
+    margin-block: 20px;
+  }
+  .concert-media > :nth-child(1),
+  .concert-media > :nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .copy-right-container {
+    flex-direction: column;
+    align-items: center;
+    padding-block: 15px;
+  }
+
+  footer,
+  .space-manage-text {
+    padding-top: 20px;
+  }
+
+  .border-bottom {
+    margin: 0;
+  }
+
+  .svg-fluid {
+    max-width: 50%;
+  }
+
+  .navbar-nav {
+    width: 500px;
+
+    padding: 100px 30px;
+  }
+
+  .gen-sponsor-image {
+    text-align: center;
+  }
+  .concert-friends {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .map-indicator-wrap {
+    right: 10px;
+  }
+
+  .circle,
+  .finger {
+    max-width: 60%;
+  }
+
+  .finger {
+    top: 25%;
+    left: 35% !important;
+  }
+
+  .fixed {
+    top: 2.5% !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .accommodation-wrap {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .navbar-nav {
+    width: 80%;
+    padding: 100px 30px;
+  }
+  .rectangle {
+    height: 72px;
+  }
+
+  .melos-img {
+    max-width: 100%;
+  }
+}
